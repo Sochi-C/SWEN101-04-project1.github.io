@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Co-Lab</title>
+    <style>
+    header {display: flex;justify-content: space-between;align-items: center; padding: 10px 30px;background-color: #4b5ae4;color: white;}
+    #logo img {height: 80px;width: auto;list-style: none; margin: 0;padding: 0;display: flex; gap: 20px;}
+    nav ul li {display: inline-block;}
+    nav ul li a {color: white;text-decoration: none;font-size: 18px;padding: 8px 14px;border-radius: 4px;transition: background-color 0.3s;}
+    nav ul li a:hover {background-color: #4b5ae4;}
+    #header-image-menu img {width: 100%;height: auto;margin-top: 0;display: block;}
+    </style>
+</head>
+<body>
+    <header>
+    <div id="logo">
+        <img src="colab_logo_editted.png" alt="Colab Logo">
+    </div>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="volunteer_signup.html">Volunteer Signup</a></li>
+        <li><a href="log_in.html">Log In</a></li>
+        </ul>
+    </nav>
+    </header>
 
     <!--<link rel="stylesheet" href="styles.css">-->
 </head>
@@ -12,11 +35,11 @@
     <br>
     <h1><u>Create Account</u></h1>
     <form action="create_account" method="POST">
-        <label for = "username" style ="background-color: antiquewhite; border:5px; border-radius: 5px; font-size: 20px;"> Name: </label>
+        <label for = "username" style ="background-color: #4b5ae4; border:5px; border-radius: 5px; font-size: 20px;"> Name: </label>
         <input type ="text" id = "username" placeholder="Enter your full name" required><br>
         <br>
 
-        <label for = "DOB" style ="background-color: antiquewhite; border:5px; border-radius: 5px; font-size: 20px;">Date of Birth: </label>
+        <label for = "DOB" style ="background-color: #4b5ae4; border:5px; border-radius: 5px; font-size: 20px;">Date of Birth: </label>
         <input type="date" id = "DOB" required><br>
         <br>
 
@@ -28,6 +51,6 @@
         <input type="text" id = "password" placeholder="Enter a password" required><br>
         <br>
 
-        <input type ="Submit" style ="background-color: lightpink; padding: 5px; border: 5px black;border-radius: 8px; font-size:18px " value = "Create Account">
+        <input type ="Submit" style ="background-color: #4b5ae4; padding: 5px; border: 5px black;border-radius: 8px; font-size:18px " value = "Create Account">
 
     </form>
