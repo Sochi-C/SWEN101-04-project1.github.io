@@ -14,7 +14,19 @@
     nav ul li a {color: white;text-decoration: none;font-size: 18px;padding: 8px 14px;border-radius: 4px;transition: background-color 0.3s;}
     nav ul li a:hover {background-color: #4b5ae4;}
     #header-image-menu img {width: 100%;height: auto;margin-top: 0;display: block;}
-    .button {background-color: #4b5ae4;color: #FFFFFF;padding: 10px;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;margin:10px}
+    .button {
+        background-color: #4b5ae4;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin: 10px;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        min-width: 140px;
+    }
     </style>
     
 </head>
@@ -32,22 +44,18 @@
         </ul>
     </nav>
     </header>
-<body>
-    <div class = "login-box">
+    <div class="login-box">
         <h1>Create Account</h1>
         <form>
             <p><label for="username">Username:</label>
-            <input type="text" id="username" name="username" required></p><br><br>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            <br><br>
-            <button type = "submit">Log In</button> 
-        
-        <p><div class = "button" width = "60" height = "100">About us</div></p>
-        <p>Don't Have An Account? Make One Here:</p>
-        <p><div class = "button" width = "60" height = "100">Create Account</div></p>
-
-
-
-
+            <input type="text" id="username" name="username" required></p>
+            <p><label for="password">Password</label>
+            <input type="password" id="password" name="password" required></p>
+            <p><button type="submit">Log In</button></p>
+            <p><a class="button" href="about_us.html">About Us</a></p>
+            <p>Don't Have An Account? Make One Here:</p>
+            <p><a class="button" href="create_account.html">Create Account</a></p>
+        </form>
+    </div>
 </body>
+</html>
