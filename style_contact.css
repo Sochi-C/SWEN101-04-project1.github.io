@@ -1,0 +1,14 @@
+.contacts{
+    display:inline-block;
+    border: 1px solid grey;
+    margin: 5px;
+    width: 100px;
+}
+.contacts.description{
+    padding: 10px;
+    text-align: center;
+}
+.contacts img{
+    width: 100%;
+    height:auto;
+}
