@@ -28,64 +28,22 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="volunteer_signup.html">Volunteer Signup</a></li>
-        <li><a href="log_in.html" id="myText">Log In</a></li>
-    
-        <li><a href="account.html">Welcome, User!</a></li>
-    
+        <li><a href="log_in.html">Log In</a></li>
         </ul>
-        <!-- Error happenes here when you try to make an account it takes a second, then doesn't make it and adds the "saved username" text -->
     </nav>
     </header>
     <div class="login-box">
-        <h1>Log Into Account</h1>
+        <h1>Create Account</h1>
         <form>
             <p><label for="username">Username:</label>
             <input type="text" id="username" name="username" required></p>
-            <p><label for="password">Password:</label>
+            <p><label for="password">Password</label>
             <input type="password" id="password" name="password" required></p>
-            <p><button type="submit" onclick="saveUsername()">Log In</button></p>
-            <p>Saved Username: <span id = "displayUsername"></span></p>
+            <p><button type="submit">Log In</button></p>
+            <p><a class="button" href="about_us.html">About Us</a></p>
             <p>Don't Have An Account? Make One Here:</p>
-            <p><a class="button" href="create_account.html" onclick="changeAccountName()">Create Account</a></p>
-
-            <script>
-                function saveUsername() {
-                    const usernameInput = document.getElementById("username");
-                    const username = usernameInput.value;
-
-                    if (username) {
-                        localStorage.setItem("savedUsername", username);
-                        alert("Username saved: " + username);
-                        document.getElementById("displayUsername").textContent = username;
-                    }else {
-                        alert("Username not Avaiable");
-                    }
-                }
-                function displayUsername() {
-                    const displayArea = document.getElementById("displayUsername");
-                    const savedUsername = localStorage.getItem("savedUsername");
-                    if (savedUsername) {
-                        displayArea.textContent = savedUsername;
-                    }else(
-                        displayArea.textContent = 'No username saved.'
-                    )
-                }
-                window.onload = displayUsername;
-                
-                function changeAccountName() {
-                    const contentElement = document.getElementById("myText");
-                    contentElement.textContent = displayUsername();
-                    console.log("Redirecting to account creation page.");
-                }
-
-
-            </script>
+            <p><a class="button" href="create_account.html">Create Account</a></p>
         </form>
-        <p><li><a href = "contact_us.html">Contact Us!</a></li></p>
-        <p><li><a href = "about_us.html">About Us</a></li></p>
     </div>
-
-
-    
 </body>
 </html>
