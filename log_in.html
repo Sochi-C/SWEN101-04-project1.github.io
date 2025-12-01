@@ -29,6 +29,9 @@
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="volunteer_signup.html">Volunteer Signup</a></li>
         <li><a href="log_in.html" id="myText">Log In</a></li>
+            if (localStorage.getItem("savedUsername")) {
+                <li><a href="log_in.html">Welcome, " + localStorage.getItem("savedUsername") + "!</a></li>
+            }
         </ul>
     </nav>
     </header>
