@@ -5,16 +5,22 @@
     <meta name="viewport" content ="width = device-width, initial-scale = 1.0">
     <title>Co-Lab</title>
     <style>
-    header {display: flex;justify-content: space-between;align-items: center; padding: 10px 30px;background-color: #4b5ae4;color: white;}
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    header {display: flex;justify-content: space-between;align-items: center; padding: 10px 30px;background-color: #4b5ae4;color: rgb(255, 255, 255);}
     #logo img {height: 80px;width: auto;list-style: none; margin: 0;padding: 0;display: flex; gap: 20px;}
     nav ul li {display: inline-block;}
-    nav ul li a {color: white;text-decoration: none;font-size: 18px;padding: 8px 14px;border-radius: 4px;transition: background-color 0.3s;}
+    nav ul li a {color: rgb(255, 255, 255);text-decoration: none;font-size: 18px;padding: 8px 14px;border-radius: 4px;transition: background-color 0.3s;}
     nav ul li a:hover {background-color: #4b5ae4;}
+    a.button {background-color: #4b5ae4; color: #fff; padding: 8px 12px; border-radius: 6px; text-decoration: none; display: inline-block;}
+    
+    a.button {background-clip: padding-box;}
     #header-image-menu img {width: 100%;height: auto;margin-top: 0;display: block;}
     </style>
 </head>
 <body>
-   <header>  
+<header>  
     <div id = 'logo'>
     <img src="colab_logo_editted.png" alt="Colab Logo">
     </div>
@@ -39,9 +45,31 @@
             padding: 24px;
             vertical-align: middle;
         "> 
-        <div>     
-            <h1>"You're Now apart of this Lab!"</h1>
+        
         </div>
-    </div> 
+        <nav>
+            <ul>
+                <li><a class="button" href="make_a_lab.html">Create You're Own Lab!</a></li>
+            </ul>
+        </nav>
+    <h1>Please Choose From Our Labs</h1>
+    <p></p><img src = "image copy.png" alt = "Fake Lab Banner[animal shelter]" style="
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+        ">
+    <p><a class='button' href="lab1.html" style="width: 26%">Animal Shelter </a></p>
+    <br>
+    <p></p><img src = "image copy 2.png" alt = "Fake Lab Banner[homeless shelter]" style="
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+        ">
+    <p><a class='button' href="lab2.html" style="width: 26%">Homeless Shelter </a></p>
+
+
+        
 </body>
 </html>
