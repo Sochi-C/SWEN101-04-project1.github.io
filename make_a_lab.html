@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    div {text-align: center;}
+    header {display: flex;justify-content: space-between;align-items: center; padding: 10px 30px;background-color: #4b5ae4;color: white;}
+    #logo img {height: 80px;width: auto;list-style: none; margin: 0;padding: 0;display: flex; gap: 20px;}
+    nav ul li {display: inline-block;}
+    nav ul li a {color: white;text-decoration: none;font-size: 18px;padding: 8px 14px;border-radius: 4px;transition: background-color 0.3s;}
+    nav ul li a:hover {background-color: #4b5ae4;}
+    #header-image-menu img {width: 100%;height: auto;margin-top: 0;display: block;}
+    </style>
+</head>
+<body>
+    <header>
+    <div id="logo">
+        <img src="colab_logo_editted.png" alt="Colab Logo">
+    </div>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="volunteer_signup.html">Volunteer Signup</a></li>
+        <li><a href="log_in.html">Log In</a></li>
+        <li><a href="account.html">Welcome, User!</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div style="
+            width: 100%;
+            height: 100%;
+            display:  flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            vertical-align: left;
+        "> 
+        <div> 
+            <h1>
+                Create A Lab</h1>
+                <p>Use the Text Box below to explain what your Volunteering needs</p>
+            <textarea id="labDescription" name="labDescription" rows="10" cols="50" placeholder="Describe your lab here..."></textarea>
+            <textarea id="labNeeds" name="labNeeds" rows="10" cols="50" placeholder="Describe your volunteering needs here..."></textarea>
+            <textarea id="labLocation" name="labLocation" rows="10" cols="50" placeholder="Describe your lab location here..."></textarea>
+            <textarea id="labDateTime" name="labDateTime" rows="10" cols="50" placeholder="Describe your lab date and time here..."></textarea>
+            <textarea id="labContactInfo" name="labContactInfo" rows="10" cols="50" placeholder="Provide your contact information here..."></textarea>
+            <textarea id="labAdditionalInfo" name="labAdditionalInfo" rows="10" cols="50" placeholder="Any additional information..."></textarea>
+            <textarea id="labTitle" name="labTitle" rows="2" cols="50" placeholder="Enter your lab title here..."></textarea>
+            <textarea id="labImageURL" name="labImageURL" rows="2" cols="50" placeholder="Enter your lab image URL here..."></textarea>
+            <br>
+            <button type="submit">Submit Lab</button>
+        </div>
+
+
+    </body>
+</html>
