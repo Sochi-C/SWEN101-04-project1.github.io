@@ -6,8 +6,8 @@
     <title>SWEN 101 Project - Co-lab</title>
     <style>
     h1 {text-align: center;}
-    p {text-align: center;}
-    div {text-align: center;}
+    p {text-align: left;}
+    div {text-align: left;}
     header {display: flex;justify-content: space-between;align-items: center; padding: 10px 30px;background-color: #4b5ae4;color: white;}
     #logo img {height: 80px;width: auto;list-style: none; margin: 0;padding: 0;display: flex; gap: 20px;}
     nav ul li {display: inline-block;}
@@ -21,12 +21,45 @@
 </head>
 <body>
     <header>    
-        <h1>Settings</h1>
-
-
-
-
+        <div id = 'logo'>
+    <img src="colab_logo_editted.png" alt="Colab Logo">
+    </div>
+    
+    
+    <!--Navigation Code :D-->
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="volunteer_signup.html">Volunteer Signup</a></li>
+        <li><a href="log_in.html">Log In</a></li>
+        <li><a href="account_info.html">Welcome, User!</a></li>
+        </ul>
+    </nav>
     </header>
 
+    <div class="container"> 
+        <h1>Settings</h1>
+        <p style="font-size: 18px"><b>Change Email</b></p>
+        <textarea style="font-size: 16px" id="settings" name="settings" rows="2" cols="50" placeholder="Change your email here ..."></textarea>
+        <br>
+        <p style="font-size: 18px"><b>Change Password</b></p>
+        <textarea style="font-size: 16px" id="settings" name="settings" rows="2" cols="50" placeholder="Change your password here ..."></textarea>
+        <br>
+        <br>
+        <button type="submit" style="font-size: 16px">Languages</button><br>
+        <br>
+        <button type="submit" style="font-size: 16px">Accessibility</button><br>
+        <br>
+        <button type="submit" style="font-size: 16px">Themes</button>
+        <br>
+        <p style="font-size: 18px"><b>Would you like to be Notified about updates ?</b></p>
+        <textarea style="font-size: 16px" id="settings" name="settings" rows="2" cols="50" placeholder="Yes or No"></textarea>
+        <br>
+        <br>
+        <br>
+        <button type="submit" style="font-size: 20px">Submit Changes</button>
+
+        </div>
 
 </body>
